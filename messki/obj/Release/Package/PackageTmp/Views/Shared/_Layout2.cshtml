@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسكي</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"> 
+    <style>
+/*top nav*/
+#nav-container{
+position:relative;
+top:10px;
+height:40px;
+margin-bottom:20px;
+}
+
+#nav-contents{
+height:50px;
+border-bottom:3px solid #000;
+}
+.site-title{
+font-weight:bold;
+font-size:2.5rem;
+float:left;
+padding-right:20px;
+}
+.site-logo img{
+width:60px;
+
+}
+
+.site-menu{
+top:10px;
+
+}
+.site-menu ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+.site-menu ul li{
+display:inline-block;
+}
+.site-menu ul li{
+margin-right:2px;
+border-left:1px solid #eee;
+padding:0 2px;
+text-align:center;
+
+}
+.site-menu ul li a{
+width:80px;
+height:30px;
+display:inline-block;
+}
+.site-menu ul li a{
+color:#222;
+text-decoration:none;
+}
+.site-menu ul li a:hover{
+color:#fff;
+background-color:#000;
+}
+
+
+.img-layer img{
+max-width:1110px;
+}
+.b-add{
+background-color: #ffffff;
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 30px 0 0;
+    padding: 15.5px;
+    text-align: center;
+text-decoration:none;
+}
+
+.b-add:hover{
+background-color:#000;
+color:#fff;
+text-decoration:none;
+}
+.img-layer
+{
+    
+}
+
+    </style>
+</head>
+<body>
+    <div id="nav-container" class="row ">
+        <div id="nav" class="col-md-12">
+            <div id="nav-contents" class="container">
+                <div class="col-md-7">
+                    <div class="site-title">
+                        <p>
+                            BLACK ORCHID
+                        </p>
+                      
+                    </div><div class="site-logo">
+    <img src="~/Content/images/messki.png" />
+</div>
+                </div>
+                <div class="col-md-5 site-menu">
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">عن الشركة</a></li>
+                        <li><a href="#">عروضنا</a></li>
+                        <li><a href="#">إتصل بن</a></li>
+                    </ul>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year -مسكي</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
