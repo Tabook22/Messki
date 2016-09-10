@@ -5,93 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مسكي</title>
     @Styles.Render("~/Content/css")
+
+    <link href="~/Content/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/owl.theme.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
-    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
     <style>
-/*top nav*/
-#nav-container{
-position:relative;
-top:10px;
-height:40px;
-margin-bottom:20px;
+        /*top nav*/
+        #nav-container {
+            position: relative;
+            top: 10px;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        #nav-contents {
+            height: 50px;
+            border-bottom: 3px solid #000;
+        }
+
+        .site-title {
+            font-weight: bold;
+            font-size: 2.5rem;
+            float: left;
+            padding-right: 20px;
+        }
+
+        .site-logo img {
+            width: 60px;
+        }
+
+        .site-menu {
+            top: 10px;
+        }
+
+            .site-menu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                .site-menu ul li {
+                    display: inline-block;
+                }
+
+                .site-menu ul li {
+                    margin-right: 2px;
+                    border-left: 1px solid #eee;
+                    padding: 0 2px;
+                    text-align: center;
+                }
+
+                    .site-menu ul li a {
+                        width: 80px;
+                        height: 30px;
+                        display: inline-block;
+                    }
+
+                    .site-menu ul li a {
+                        color: #222;
+                        text-decoration: none;
+                    }
+
+                        .site-menu ul li a:hover {
+                            color: #fff;
+                            background-color: #000;
+                        }
+
+
+        .img-layer img {
+            max-width: 1110px;
+        }
+
+        .b-add {
+            background-color: #ffffff;
+            border: 1px solid #d7d7d7;
+            box-sizing: border-box;
+            color: #000000;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+            margin: 30px 0 0;
+            padding: 15.5px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+            .b-add:hover {
+                background-color: #000;
+                color: #fff;
+                text-decoration: none;
+            }
+
+        .img-layer {
+        }
+
+        .d1-title, .d2-title, .d3-title {
+            background-color: #000000;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-family: abchanel-couture,Arial,Helvetica,sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            height: 38px;
+            line-height: 26px;
+            margin-bottom: 12px;
+            padding: 7px 10px;
+            position: relative;
+            text-align: left;
+        }
+
+            .d1-title a, .d2-title a, .d3-title a {
+                display: block;
+                color: #fff;
+                text-align: right;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+
+                .d1-title a:hover,.d2-title a:hover,.d3-title a:hover {
+                    color: #DEAB72;
+                    text-decoration: none;
+                }
+
+        .d3-title {
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #fff none repeat scroll 0 0;
+            border-top: 2px solid #000;
+            bottom: 0;
+            font-family: abchanel-couture,Arial,Helvetica,sans-serif;
+            height: 42px;
+            left: 0;
+            position: fixed;
+            width: 100%;
+        }
+        footer #footer-list{
+          
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    white-space: nowrap;
+        }
+
+        footer #footer-list li a{color: #000;
+    text-decoration: none;}
+
+                footer #footer-list li a:hover{color: #4c4c4c;}
+
+        footer #footer-list li {
+    color: #000;
+    display: inline;
+    font-size: 10px;
+    line-height: 42px;
+    list-style-type: none;
+    padding-right: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
-#nav-contents{
-height:50px;
-border-bottom:3px solid #000;
-}
-.site-title{
-font-weight:bold;
-font-size:2.5rem;
-float:left;
-padding-right:20px;
-}
-.site-logo img{
-width:60px;
+        
 
+    #slider .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .slider2 .item{
+  margin: 3px;
 }
-
-.site-menu{
-top:10px;
-
-}
-.site-menu ul{
-list-style:none;
-padding:0;
-margin:0;
-}
-.site-menu ul li{
-display:inline-block;
-}
-.site-menu ul li{
-margin-right:2px;
-border-left:1px solid #eee;
-padding:0 2px;
-text-align:center;
-
-}
-.site-menu ul li a{
-width:80px;
-height:30px;
-display:inline-block;
-}
-.site-menu ul li a{
-color:#222;
-text-decoration:none;
-}
-.site-menu ul li a:hover{
-color:#fff;
-background-color:#000;
+.slider2 .item img{
+  display: block;
+ width: 100%;
+  height: auto;
 }
 
-
-.img-layer img{
-max-width:1110px;
-}
-.b-add{
-background-color: #ffffff;
-    border: 1px solid #d7d7d7;
-    box-sizing: border-box;
-    color: #000000;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 30px 0 0;
-    padding: 15.5px;
-    text-align: center;
-text-decoration:none;
-}
-
-.b-add:hover{
-background-color:#000;
-color:#fff;
-text-decoration:none;
-}
-.img-layer
-{
-    
-}
 
     </style>
 </head>
@@ -102,12 +195,12 @@ text-decoration:none;
                 <div class="col-md-7">
                     <div class="site-title">
                         <p>
-                            BLACK ORCHID
+                            MESSKI
                         </p>
-                      
+
                     </div><div class="site-logo">
-    <img src="~/Content/images/messki.png" />
-</div>
+                        <img src="~/Content/images/messki.png" />
+                    </div>
                 </div>
                 <div class="col-md-5 site-menu">
                     <ul>
@@ -118,19 +211,34 @@ text-decoration:none;
                     </ul>
                 </div>
             </div>
-         
+
         </div>
     </div>
-    <div class="container body-content">
+    <div id="" class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year -مسكي</p>
+            <ul id="footer-list" style="float: right;" class="en_US">
+                <li class="x-ccf-hidden-below-420"><a id="x-sunglasses" href="http://www.chanel.com/en_US/fashion/sunglasses/products" target="_blank" class="x-ccf-navitems x-ccf-hidden-below-420" data-track="{&quot;ch_scat1&quot;:&quot;FOOTER&quot;,&quot;ch_scat2&quot;:&quot;FOOTER_SHOP SUNGLASSES&quot;,&quot;ch_prod&quot;:&quot;FOOTER&quot;,&quot;WT.nv&quot;:&quot;FOOTER&quot;,&quot;WT.ti&quot;:&quot;ShopSunglasses&quot;,&quot;WT.dl&quot;:&quot;50&quot;}">SHOP SUNGLASSES</a></li>
+                <li class="x-ccf-hidden-below-420"><a id="x-faq" href="#faq/fb" class="x-ccf-navitems x-ccf-hidden-below-420" data-ccservices="faq/fb" data-track="{&quot;ch_scat1&quot;:&quot;FOOTER&quot;,&quot;ch_scat2&quot;:&quot;FOOTER_FAQ&quot;,&quot;ch_prod&quot;:&quot;FOOTER&quot;,&quot;WT.nv&quot;:&quot;FOOTER&quot;,&quot;WT.ti&quot;:&quot;AtYourService&quot;,&quot;WT.dl&quot;:&quot;50&quot;}">FAQ</a></li>
+                <li class="x-ccf-hidden-below-420"><a id="x-storelocator" href="#storelocator_fb" class="x-ccf-navitems x-ccf-hidden-below-420" data-ccservices="storelocator_fb" data-track="{&quot;ch_scat1&quot;:&quot;FOOTER&quot;,&quot;ch_scat2&quot;:&quot;FOOTER_STORELOCATOR&quot;,&quot;ch_prod&quot;:&quot;FOOTER&quot;,&quot;WT.nv&quot;:&quot;FOOTER&quot;,&quot;WT.ti&quot;:&quot;Storelocator&quot;,&quot;WT.dl&quot;:&quot;50&quot;}">STORELOCATOR</a></li>
+                <li class="x-ccf-hidden-below-420"><a id="x-promotion" href="http://www.chanel.com/en_US/commerce/benefits" class="x-ccf-navitems x-ccf-hidden-below-420" data-track="{&quot;ch_scat1&quot;:&quot;FOOTER&quot;,&quot;ch_scat2&quot;:&quot;FOOTER_BENEFITS OF CHANEL&quot;,&quot;ch_prod&quot;:&quot;FOOTER&quot;,&quot;WT.nv&quot;:&quot;FOOTER&quot;,&quot;WT.ti&quot;:&quot;BenefitsofChanel&quot;,&quot;WT.dl&quot;:&quot;50&quot;}">BENEFITS OF CHANEL</a></li>
+                <li class="x-ccf-hidden-below-420"><a id="x-contact" href="#contact" class="x-ccf-navitems x-ccf-hidden-below-420" data-ccservices="contact" data-track="{&quot;ch_scat1&quot;:&quot;FOOTER&quot;,&quot;ch_scat2&quot;:&quot;FOOTER_CONTACT US&quot;,&quot;ch_prod&quot;:&quot;FOOTER&quot;,&quot;WT.nv&quot;:&quot;FOOTER&quot;,&quot;WT.ti&quot;:&quot;ContactUs&quot;,&quot;WT.dl&quot;:&quot;50&quot;}">CONTACT US</a></li>
+                <li><a id="x-ccf-toggle" href="#" data-track="{&quot;ch_scat1&quot;:&quot;FOOTER&quot;,&quot;ch_scat2&quot;:&quot;Footer More Menu&quot;,&quot;ch_prod&quot;:&quot;more link&quot;,&quot;WT.nv&quot;:&quot;FOOTER&quot;,&quot;WT.ti&quot;:&quot;More&quot;,&quot;WT.dl&quot;:&quot;50&quot;}">CHANEL.COM</a></li>
+            </ul>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+
+
+    <script src="~/Content/owl.carousel.min.js"></script>
+    <script src="~/Scripts/topSlider.js"></script>
+
+
     @RenderSection("scripts", required: false)
+
+
 </body>
 </html>

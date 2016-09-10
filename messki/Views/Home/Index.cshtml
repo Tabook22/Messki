@@ -1,5 +1,16 @@
-﻿<div class="row" style="padding-bottom:40px;">
+﻿
+<div class="row" style="padding-bottom:40px;">
+    <div class="col-md-12">
 
+        <div id="slider" class="owl-carousel owl-theme">
+            <div class="item"><img src="~/Content/assets/fullimage1.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="~/Content/assets/fullimage2.jpg" alt="GTA V"></div>
+            <div class="item"><img src="~/Content/assets/fullimage3.jpg" alt="Mirror Edge"></div>
+
+        </div>
+
+
+    </div>
         <div class="col-md-8">
             <div class="img-layer">
                 <img src="~/Content/images/img3.jpg" class="img-responsive"/>
@@ -22,20 +33,69 @@
 </div>
 
 <div class="row">
-    <div id="col-men" class="col-md-6">
-        <div class="men-title">
-
+    <div id="col-d1" class="col-md-6">
+        <div class="d1-title">
+            <a href="">البخور</a>
         </div>
-        <div class="men-details">
+        <div class="d1-details">
             <img src="~/Content/images/img4.jpg" class="img-responsive"/>
         </div>
     </div>
-    <div id="col-women" class="col-md-6">
-        <div class="women-title">
-
+    <div id="col-d2" class="col-md-6">
+        <div class="d2-title">
+            <a href="">دهن العود</a>
         </div>
-        <div class="women-details">
-
+        <div class="d2-details">
+            <img src="~/Content/images/img2.jpg" class="img-responsive" />
+        </div>
+        <div class="d3-title">
+            <a href="">دهن العود</a>
+        </div>
+        <div class="d3-details">
+            <img src="~/Content/images/img5.jpg" class="img-responsive" />
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="slider2">
+            <div class="item"><img src="~/Content/assets/owl1.jpg" alt="Owl Image"></div>
+           <div class="item"><img src="~/Content/assets/owl2.jpg" alt="Owl Image"></div>
+            <div class="item"><img src="~/Content/assets/owl3.jpg" alt="Owl Image"></div>
+           <div class="item"><img src="~/Content/assets/owl4.jpg" alt="Owl Image"></div>
+            <div class="item"><img src="~/Content/assets/owl5.jpg" alt="Owl Image"></div>
+           <div class="item"><img src="~/Content/assets/owl6.jpg" alt="Owl Image"></div>
+           <div class="item"><img src="~/Content/assets/owl7.jpg" alt="Owl Image"></div>
+          <div class="item"><img src="~/Content/assets/owl8.jpg" alt="Owl Image"></div>
+
+        </div>
+
+    </div>
+</div>
+@*@section scripts{
+    <script>
+        var owl;
+        $(document).ready(function () {
+            owl = $("#slider").owlCarousel({
+                autoplay: true,
+                autoplaySpeed: 300,
+                loop: true,
+                navSpeed: 300,
+                items: 1,
+                margin: 2
+            });
+
+
+            $(".slider2").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                   items : 4,
+                      itemsDesktop : [1199,3],
+                      itemsDesktopSmall : [979,3]
+                   });
+
+        });
+
+
+    </script>
+    
+    }*@

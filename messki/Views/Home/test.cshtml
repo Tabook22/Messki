@@ -1,0 +1,129 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>test</title>
+    <link href="~/Content/assets/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/assets/owl.theme.css" rel="stylesheet" />
+    <style>
+           #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+
+
+
+           .owl-carousel {
+  position: relative;
+  height: 100%;
+}
+.owl-carousel div:not(.owl-controls) {
+  height: 100%;
+}
+.owl-carousel .owl-slide {
+  background-image: url("https://images.unsplash.com/photo-1437915015400-137312b61975?fit=crop&fm=jpg&h=800&q=80&w=1200");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.owl-carousel div.owl--text {
+  position: absolute;
+  bottom: 4em;
+  left: 2em;
+  width: 20em;
+  height: 8em;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+.owl-carousel .owl-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.owl-carousel .owl-controls .owl-buttons div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: inline-block;
+  zoom: 1;
+  margin: 0;
+  width: 50px;
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  font-size: .9em;
+  border-radius: 3px;
+  color: #FFF;
+  background: #000;
+  opacity: .6;
+  text-transform: capitalize;
+}
+.owl-carousel .owl-controls .owl-buttons .owl-prev {
+  left: 5px;
+}
+.owl-carousel .owl-controls .owl-buttons .owl-next {
+  right: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: futura, arial, sans-serif;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div> 
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><img src="~/Content/assets/fullimage1.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="~/Content/assets/fullimage2.jpg" alt="GTA V"></div>
+            <div class="item"><img src="~/Content/assets/fullimage3.jpg" alt="Mirror Edge"></div>
+
+        </div>
+    </div>
+
+    <div id="owl-example" class="owl-carousel">
+        <div class="owl-slide">
+            <div class="owl--text">
+                This is a full height Owl slider. There is nothing else interesting here!
+            </div>
+        </div>
+        <div class="owl-slide">
+            <div class="owl--text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit!
+            </div>
+        </div>
+        <div class="owl-slide">
+            <div class="owl--text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam excepturi voluptate eveniet consectetur numquam laboriosam.
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript Liprary -->
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    
+    <script src="~/Content/owl.carousel.min.js"></script>
+    <script src="~/Scripts/topSlider.js"></script>
+</body>
+</html>

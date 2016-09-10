@@ -180,11 +180,50 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AjaxLoader.gif" />
+    <Content Include="Content\assets\fullimage1.jpg" />
+    <Content Include="Content\assets\fullimage2.jpg" />
+    <Content Include="Content\assets\fullimage3.jpg" />
+    <Content Include="Content\assets\images\m1.jpg" />
+    <Content Include="Content\assets\images\m10.jpg" />
+    <Content Include="Content\assets\images\m11.jpg" />
+    <Content Include="Content\assets\images\m12.jpg" />
+    <Content Include="Content\assets\images\m13.jpg" />
+    <Content Include="Content\assets\images\m14.jpg" />
+    <Content Include="Content\assets\images\m15.jpg" />
+    <Content Include="Content\assets\images\m16.jpg" />
+    <Content Include="Content\assets\images\m17.jpg" />
+    <Content Include="Content\assets\images\m18.jpg" />
+    <Content Include="Content\assets\images\m19.jpg" />
+    <Content Include="Content\assets\images\m2.jpg" />
+    <Content Include="Content\assets\images\m20.jpg" />
+    <Content Include="Content\assets\images\m21.jpg" />
+    <Content Include="Content\assets\images\m22.jpg" />
+    <Content Include="Content\assets\images\m23.jpg" />
+    <Content Include="Content\assets\images\m24.jpg" />
+    <Content Include="Content\assets\images\m25.jpg" />
+    <Content Include="Content\assets\images\m26.jpg" />
+    <Content Include="Content\assets\images\m27.jpg" />
+    <Content Include="Content\assets\images\m3.jpg" />
+    <Content Include="Content\assets\images\m4.jpg" />
+    <Content Include="Content\assets\images\m5.jpg" />
+    <Content Include="Content\assets\images\m6.jpg" />
+    <Content Include="Content\assets\images\m7.jpg" />
+    <Content Include="Content\assets\images\m8.jpg" />
+    <Content Include="Content\assets\images\m9.jpg" />
+    <Content Include="Content\assets\owl.carousel.css" />
+    <Content Include="Content\assets\owl.theme.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\grabbing.png" />
     <Content Include="Content\images\img3.jpg" />
     <Content Include="Content\images\img4.jpg" />
     <Content Include="Content\images\messki.png" />
+    <Content Include="Content\owl.carousel.css" />
+    <Content Include="Content\owl.carousel.js" />
+    <Content Include="Content\owl.carousel.min.js" />
+    <Content Include="Content\owl.theme.css" />
+    <Content Include="Content\owl.transitions.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -204,6 +243,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\topSlider.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -240,6 +280,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Home\test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
